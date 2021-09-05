@@ -18,6 +18,19 @@
     "noUnusedParameters": false,
     "resolveJsonModule": true,
     "skipLibCheck": true,
+    "paths": {
+      "Components/*": ["./Components/*"],
+      "Constants/*": ["./Constants/*"],
+      "Dictionaries/*": ["./Dictionaries/*"],
+      "Examples/*": ["./Examples/*"],
+      "Icons/*": ["./Icons/*"],
+      "Interfaces/*": ["./Interfaces/*"],
+      "Layouts/*": ["./Layouts/*"],
+      "Mock/*": ["./Mock/*"],
+      "Services/*": ["./Services/*"],
+      "Theme/*": ["./Theme/*"],
+      "Widgets/*": ["./Widgets/*"]
+    },
     "strict": true,
     "target": "es6",
     "typeRoots": [
