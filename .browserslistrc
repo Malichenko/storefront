@@ -1,0 +1,14 @@
+[production]
+edge >= 44
+firefox >= 70
+chrome >= 75
+safari >= 12
+opera >= 60
+
+[development]
+last 1 chrome version
+last 1 firefox version
+last 1 safari version
+
+[ssr]
+node 15

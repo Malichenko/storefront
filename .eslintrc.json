@@ -1,0 +1,25 @@
+{
+	"root": true,
+	"extends": ["@wezom/eslint-config", "eslint-config-prettier"],
+	"parser": "babel-eslint",
+	"plugins": ["jest"],
+	"env": {
+		"jest/globals": true
+	},
+	"overrides": [
+		{
+			"files": ["*.ts"],
+			"extends": ["@wezom/eslint-config-ts", "eslint-config-prettier"],
+			"parserOptions": {
+				"project": "./tsconfig.eslint.json"
+			}
+		},
+		{
+			"files": ["*.tsx"],
+			"extends": ["@wezom/eslint-config-ts-react", "eslint-config-prettier"],
+			"parserOptions": {
+				"project": "./tsconfig.eslint.json"
+			}
+		}
+	]
+}
