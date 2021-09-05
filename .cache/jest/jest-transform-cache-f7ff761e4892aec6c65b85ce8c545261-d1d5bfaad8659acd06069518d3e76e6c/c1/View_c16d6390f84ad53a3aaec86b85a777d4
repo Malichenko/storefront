@@ -1,0 +1,196 @@
+07372e1992d6dbeb691d73b04b61a3b8
+"use strict";
+
+/* istanbul ignore next */
+function cov_18ozuc6cb6() {
+  var path = "/Users/oleksiimalichenko/Documents/Tutorial/storefrot/src/Components/Render/View.tsx";
+  var hash = "9a6f5ea38cc9a4c48880ae223114b08207a67a45";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/oleksiimalichenko/Documents/Tutorial/storefrot/src/Components/Render/View.tsx",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 22
+        },
+        end: {
+          line: 3,
+          column: 50
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 15
+        },
+        end: {
+          line: 4,
+          column: 154
+        }
+      },
+      "3": {
+        start: {
+          line: 4,
+          column: 48
+        },
+        end: {
+          line: 4,
+          column: 154
+        }
+      },
+      "4": {
+        start: {
+          line: 5,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 25
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 4,
+            column: 15
+          },
+          end: {
+            line: 4,
+            column: 16
+          }
+        },
+        loc: {
+          start: {
+            line: 4,
+            column: 48
+          },
+          end: {
+            line: 4,
+            column: 154
+          }
+        },
+        line: 4
+      }
+    },
+    branchMap: {
+      "0": {
+        loc: {
+          start: {
+            line: 4,
+            column: 48
+          },
+          end: {
+            line: 4,
+            column: 154
+          }
+        },
+        type: "cond-expr",
+        locations: [{
+          start: {
+            line: 4,
+            column: 69
+          },
+          end: {
+            line: 4,
+            column: 147
+          }
+        }, {
+          start: {
+            line: 4,
+            column: 150
+          },
+          end: {
+            line: 4,
+            column: 154
+          }
+        }],
+        line: 4
+      }
+    },
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {
+      "0": [0, 0]
+    },
+    inputSourceMap: {
+      file: "/Users/oleksiimalichenko/Documents/Tutorial/storefrot/src/Components/Render/View.tsx",
+      mappings: ";;;AAGA,MAAM,MAAM,GAA0B,CAAC,EAAE,EAAE,EAAE,SAAS,EAAE,QAAQ,EAAE,EAAE,EAAE,CACrE,SAAS,KAAK,IAAI,CAAC,CAAC,CAAC,2DAAG,QAAQ,WAAI,CAAC,CAAC,CAAC,IAAI,CAAC;AAE7C,kBAAe,MAAM,CAAC",
+      names: [],
+      sources: ["/Users/oleksiimalichenko/Documents/Tutorial/storefrot/src/Components/Render/View.tsx"],
+      sourcesContent: ["import React from 'react';\nimport { RenderProps } from './Types';\n\nconst Render: React.FC<RenderProps> = ({ if: condition, children }) =>\n\tcondition === true ? <>{children}</> : null;\n\nexport default Render;\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "9a6f5ea38cc9a4c48880ae223114b08207a67a45"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_18ozuc6cb6 = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_18ozuc6cb6();
+cov_18ozuc6cb6().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+const jsx_runtime_1 =
+/* istanbul ignore next */
+(cov_18ozuc6cb6().s[1]++, require("react/jsx-runtime"));
+
+/* istanbul ignore next */
+cov_18ozuc6cb6().s[2]++;
+
+const Render = ({
+  if: condition,
+  children
+}) => {
+  /* istanbul ignore next */
+  cov_18ozuc6cb6().f[0]++;
+  cov_18ozuc6cb6().s[3]++;
+  return condition === true ?
+  /* istanbul ignore next */
+  (cov_18ozuc6cb6().b[0][0]++, (0, jsx_runtime_1.jsx)(jsx_runtime_1.Fragment, {
+    children: children
+  }, void 0)) :
+  /* istanbul ignore next */
+  (cov_18ozuc6cb6().b[0][1]++, null);
+};
+
+/* istanbul ignore next */
+cov_18ozuc6cb6().s[4]++;
+exports.default = Render;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9vbGVrc2lpbWFsaWNoZW5rby9Eb2N1bWVudHMvVHV0b3JpYWwvc3RvcmVmcm90L3NyYy9Db21wb25lbnRzL1JlbmRlci9WaWV3LnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBR0EsTUFBTSxNQUFNLEdBQTBCLENBQUM7QUFBRSxFQUFBLEVBQUUsRUFBRSxTQUFOO0FBQWlCLEVBQUE7QUFBakIsQ0FBRCxLQUNyQztBQUFBO0FBQUE7QUFBQTtBQUFBLFNBQUEsU0FBUyxLQUFLLElBQWQ7QUFBQTtBQUFBLCtCQUFxQixDQUFBLEdBQUEsYUFBQSxDQUFBLEdBQUEsRUFBQSxhQUFBLENBQUEsUUFBQSxFQUFBO0FBQUEsSUFBQSxRQUFBLEVBQUc7QUFBSCxHQUFBLEVBQVcsS0FBQSxDQUFYLENBQXJCO0FBQUE7QUFBQSwrQkFBdUMsSUFBdkM7QUFBMkMsQ0FENUM7Ozs7QUFHQSxPQUFBLENBQUEsT0FBQSxHQUFlLE1BQWYiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xuaW1wb3J0IHsgUmVuZGVyUHJvcHMgfSBmcm9tICcuL1R5cGVzJztcblxuY29uc3QgUmVuZGVyOiBSZWFjdC5GQzxSZW5kZXJQcm9wcz4gPSAoeyBpZjogY29uZGl0aW9uLCBjaGlsZHJlbiB9KSA9PlxuXHRjb25kaXRpb24gPT09IHRydWUgPyA8PntjaGlsZHJlbn08Lz4gOiBudWxsO1xuXG5leHBvcnQgZGVmYXVsdCBSZW5kZXI7XG4iXX0=

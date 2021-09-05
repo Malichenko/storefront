@@ -1,17 +1,15 @@
 // Core
 import React, { ReactElement } from 'react';
-import { Router } from 'react-router-dom';
 // Other
-import { History, Routes } from 'Navigation';
 // Styles
 import Classes from './UserLayout.module.css';
+import { HeaderComponent } from '../../Components/HeaderComponent';
 
-const UserLayout: React.FC = (): ReactElement => {
+const UserLayout: React.FC = ({ children }): ReactElement => {
 	return (
 		<div className={Classes.root}>
-			<Router history={History}>
-				<Routes />
-			</Router>
+			<HeaderComponent />
+			{children}
 		</div>
 	);
 };

@@ -1,13 +1,17 @@
 // Core
 import React, { ReactElement } from 'react';
+import { Router } from 'react-router-dom';
+// Navigation
+import { History, Routes } from './Navigation';
 // Widgets
-import UserLayout from 'Layouts/UserLayout/UserLayout';
-import { CartProvider } from './Services/Cart/Provider';
+import { CartProvider } from 'Services/Cart/Provider';
 
 export const App: React.FC = (): ReactElement => {
 	return (
 		<CartProvider>
-			<UserLayout />
+			<Router history={History}>
+				<Routes />
+			</Router>
 		</CartProvider>
 	);
 };

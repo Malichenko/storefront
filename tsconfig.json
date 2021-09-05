@@ -16,8 +16,6 @@
     "noEmit": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
     "paths": {
       "Components/*": ["./Components/*"],
       "Constants/*": ["./Constants/*"],
@@ -31,6 +29,8 @@
       "Theme/*": ["./Theme/*"],
       "Widgets/*": ["./Widgets/*"]
     },
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
     "strict": true,
     "target": "es6",
     "typeRoots": [

@@ -1,0 +1,153 @@
+0c1f7570703599f342758c1d93c429f5
+"use strict";
+
+/* istanbul ignore next */
+function cov_2aafw7mgvw() {
+  var path = "/Users/oleksiimalichenko/Documents/Tutorial/storefrot/src/Components/HeaderComponent/index.ts";
+  var hash = "5cb5f5aa06c404cd6d214eb6a90c655a28d95041";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "/Users/oleksiimalichenko/Documents/Tutorial/storefrot/src/Components/HeaderComponent/index.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 33
+        }
+      },
+      "2": {
+        start: {
+          line: 4,
+          column: 13
+        },
+        end: {
+          line: 4,
+          column: 30
+        }
+      },
+      "3": {
+        start: {
+          line: 5,
+          column: 0
+        },
+        end: {
+          line: 5,
+          column: 114
+        }
+      },
+      "4": {
+        start: {
+          line: 5,
+          column: 89
+        },
+        end: {
+          line: 5,
+          column: 108
+        }
+      }
+    },
+    fnMap: {
+      "0": {
+        name: "(anonymous_0)",
+        decl: {
+          start: {
+            line: 5,
+            column: 75
+          },
+          end: {
+            line: 5,
+            column: 76
+          }
+        },
+        loc: {
+          start: {
+            line: 5,
+            column: 87
+          },
+          end: {
+            line: 5,
+            column: 110
+          }
+        },
+        line: 5
+      }
+    },
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    f: {
+      "0": 0
+    },
+    b: {},
+    inputSourceMap: {
+      file: "/Users/oleksiimalichenko/Documents/Tutorial/storefrot/src/Components/HeaderComponent/index.ts",
+      mappings: ";;;AAAA,+BAA8C;AAAtC,uGAAA,IAAI,OAAmB",
+      names: [],
+      sources: ["/Users/oleksiimalichenko/Documents/Tutorial/storefrot/src/Components/HeaderComponent/index.ts"],
+      sourcesContent: ["export {View as HeaderComponent} from './View'"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "5cb5f5aa06c404cd6d214eb6a90c655a28d95041"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_2aafw7mgvw = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_2aafw7mgvw();
+cov_2aafw7mgvw().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_2aafw7mgvw().s[1]++;
+exports.HeaderComponent = void 0;
+var View_1 =
+/* istanbul ignore next */
+(cov_2aafw7mgvw().s[2]++, require("./View"));
+
+/* istanbul ignore next */
+cov_2aafw7mgvw().s[3]++;
+Object.defineProperty(exports, "HeaderComponent", {
+  enumerable: true,
+  get: function () {
+    /* istanbul ignore next */
+    cov_2aafw7mgvw().f[0]++;
+    cov_2aafw7mgvw().s[4]++;
+    return View_1.View;
+  }
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9vbGVrc2lpbWFsaWNoZW5rby9Eb2N1bWVudHMvVHV0b3JpYWwvc3RvcmVmcm90L3NyYy9Db21wb25lbnRzL0hlYWRlckNvbXBvbmVudC9pbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsSUFBQSxNQUFBO0FBQUE7QUFBQSwwQkFBQSxPQUFBLENBQUEsUUFBQSxDQUFBLENBQUE7Ozs7QUFBUSxNQUFBLENBQUEsY0FBQSxDQUFBLE9BQUEsRUFBQSxpQkFBQSxFQUFBO0FBQUEsRUFBQSxVQUFBLEVBQUEsSUFBQTtBQUFBLEVBQUEsR0FBQSxFQUFBLFlBQUE7QUFBQTtBQUFBO0FBQUE7QUFBQSxXQUFBLE1BQUEsQ0FBQSxJQUFBO0FBQUk7QUFBSixDQUFBIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IHtWaWV3IGFzIEhlYWRlckNvbXBvbmVudH0gZnJvbSAnLi9WaWV3JyJdfQ==

@@ -1,8 +1,7 @@
 // Core
 import React from 'react';
 // Pages
-import { CategoryWidget } from '../Widgets/CategoryWidget';
-import { ProductWidget } from '../Widgets/ProductWidget';
+import { CategoryPage, ProductPage } from './Pages';
 
 type Book = {
 	url: string;
@@ -13,12 +12,12 @@ type Book = {
 export const BOOK: Readonly<{ [key: string]: Book }> = {
 	home: {
 		url: '/',
-		component: CategoryWidget,
+		component: CategoryPage,
 		id: 'category'
 	},
 	product: {
 		url: '/product',
-		component: ProductWidget,
+		component: ProductPage,
 		id: 'product'
 	}
 };
