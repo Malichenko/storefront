@@ -29,11 +29,13 @@
     "web-vitals": "^1.0.1"
   },
   "devDependencies": {
+    "@types/cheerio": "^0.22.24",
     "@types/enzyme": "^3.10.9",
     "@wezom/eslint-config": "^8.0.0",
     "@wezom/eslint-config-ts": "^8.0.0",
     "@wezom/eslint-config-ts-react": "^8.0.0",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
+    "cheerio": "^1.0.0-rc.5",
     "enzyme": "^3.11.0",
     "enzyme-to-json": "^3.6.1",
     "eslint": "^7.32.0",

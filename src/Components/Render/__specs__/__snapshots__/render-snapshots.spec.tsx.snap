@@ -1,13 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Render /> Should NOT render children 1`] = `
-<div>
-  HeaderComponent
-</div>
-`;
+exports[`<Render /> Should NOT render children 1`] = `null`;
 
 exports[`<Render /> Should render children 1`] = `
 <div>
-  HeaderComponent
+  Lorem ipsum dolor sit amet.
 </div>
 `;

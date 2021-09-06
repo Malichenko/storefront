@@ -1,6 +1,6 @@
 import React from 'react';
-import { TestRenderComponent, TestsService } from 'Services/Tests';
 import { Render, RenderProps } from '../index';
+import { TestRenderComponent, TestsService } from 'Services/Tests';
 
 const renderComponent = (props: RenderProps): TestRenderComponent =>
 	TestsService.renderComponent(
