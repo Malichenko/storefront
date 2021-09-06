@@ -6,4 +6,4 @@ export const Context = createContext<ContextData>({
 	updateCart: (): void => undefined,
 	deleteCart: (): void => undefined
 });
-export const useCheckoutContext = (): ContextData => useContext(Context);
+export const useCart = (): ContextData => useContext(Context);

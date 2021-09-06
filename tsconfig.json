@@ -24,7 +24,7 @@
       "Icons/*": ["./Icons/*"],
       "Interfaces/*": ["./Interfaces/*"],
       "Layouts/*": ["./Layouts/*"],
-      "Mock/*": ["./Mock/*"],
+      "Navigation/*": ["./Navigation/*"],
       "Services/*": ["./Services/*"],
       "Theme/*": ["./Theme/*"],
       "Widgets/*": ["./Widgets/*"]
