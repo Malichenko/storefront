@@ -1,0 +1,76 @@
+.banner {
+	background-image: url('./plates-header.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*height: 533px;*/
+	display: flex;
+	justify-content: center;
+}
+.banner__wrap {
+	width: calc(45% + 1rem);
+	padding: 0 1rem;
+	background-color: #fff;
+}
+
+.banner__announcement {
+	width: 100%;
+	background: #393935;
+	position: relative;
+}
+
+.banner__announcement:before {
+	content: '';
+	display: block;
+	padding-top: 55%;
+}
+
+.banner__caption {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: #fff;
+	width: 100%;
+}
+
+.banner__title {
+	padding: 0 0.5rem 1rem 0.5rem;
+	border-bottom: #fff solid 1px;
+	display: inline-block;
+	margin-bottom: 2rem;
+	font-size: 2rem;
+	font-family: serif;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+}
+@media screen and (max-width: 90rem) {
+	.banner__title {
+		padding-bottom: 0.8rem;
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+}
+@media screen and (max-width: 64rem) {
+	.banner__title {
+		padding-bottom: 0.6rem;
+		font-size: 1.3rem;
+		margin-bottom: 1.3rem;
+	}
+}
+
+.banner__subtitle {
+	font-size: 1.6rem;
+	line-height: 1.2;
+}
+@media screen and (max-width: 90rem) {
+	.banner__subtitle {
+		font-size: 1.2rem;
+	}
+}
+@media screen and (max-width: 64rem) {
+	.banner__subtitle {
+		font-size: 1rem;
+	}
+}
