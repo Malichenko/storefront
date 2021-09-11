@@ -2,8 +2,9 @@
 import React, { ReactElement } from 'react';
 import { useLocation } from 'react-router';
 // Other
-import { BOOK } from '../../Navigation';
+import { BOOK } from 'Navigation';
 // Components
+import { Container } from 'Components/Container';
 import { HeaderWidget } from 'Widgets/HeaderWidget';
 import { Render } from 'Components/Render';
 import { BannerComponent } from 'Components/BannerComponent';
@@ -21,7 +22,7 @@ const UserLayout: React.FC = ({ children }): ReactElement => {
 				<BannerComponent />
 			</Render>
 
-			{children}
+			<Container>{children}</Container>
 		</div>
 	);
 };

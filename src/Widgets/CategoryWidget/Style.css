@@ -1,0 +1,15 @@
+.category {
+	padding-top: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+	.category {
+		padding-top: 3rem;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.category {
+		padding-top: 5rem;
+	}
+}
