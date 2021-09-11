@@ -40,6 +40,7 @@
     "allowSyntheticDefaultImports": true,
     "noFallthroughCasesInSwitch": true
   },
+  "no-unsafe-any": true,
   "include": [
     "**/*.ts",
     "**/*.tsx"

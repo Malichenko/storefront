@@ -3,15 +3,45 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	/*height: 533px;*/
 	display: flex;
 	justify-content: center;
 }
 .banner__wrap {
-	width: calc(45% + 1rem);
+	width: 100%;
 	padding: 0 1rem;
 	background-color: #fff;
 }
+
+@media screen and (min-width: 576px) {
+	.banner__wrap {
+		width: calc(70% + 1rem);
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.banner__wrap {
+		width: calc(60% + 1rem);
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.banner__wrap {
+		width: calc(55% + 1rem);
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.banner__wrap {
+		width: calc(50% + 1rem);
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.banner__wrap {
+		width: calc(45% + 1rem);
+	}
+}
+
 
 .banner__announcement {
 	width: 100%;
@@ -27,6 +57,7 @@
 
 .banner__caption {
 	position: absolute;
+	padding: 0 1rem;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);

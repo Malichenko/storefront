@@ -1,15 +1,43 @@
 .category {
-	padding-top: 1.5rem;
+	padding: 1.5rem 0 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
 	.category {
-		padding-top: 3rem;
+		padding: 3rem 0 3rem;
 	}
 }
 
 @media screen and (min-width: 1200px) {
 	.category {
-		padding-top: 5rem;
+		padding: 5rem 0 5rem;
+	}
+}
+
+.category__wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@media screen and (min-width: 576px) {
+	.category__wrap {
+		margin: 0 -1rem;
+	}
+}
+
+.category__item {
+	width: 100%;
+	flex: 0 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+	.category__item {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.category__item {
+		width: 33.3333333333%;
 	}
 }

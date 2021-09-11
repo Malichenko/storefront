@@ -11,9 +11,11 @@ export const View: React.FC = (): ReactElement => {
 	const products = useCategory();
 	return (
 		<article className="category">
-			<div className="category__inner">
+			<div className="category__wrap">
 				{products.map((el, idx) => (
-					<CardComponent key={`${el.title}:${idx}`} product={el} />
+					<div className="category__item" key={`${el.title}:${idx}`}>
+						<CardComponent product={el} />
+					</div>
 				))}
 			</div>
 		</article>

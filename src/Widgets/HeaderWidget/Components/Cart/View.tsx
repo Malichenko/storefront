@@ -12,7 +12,7 @@ export const View: React.FC = (): ReactElement => {
 	return (
 		<section className="cart">
 			<a href="/" className="cart__link">
-				my cart ({cart.length}) <ArrowDown />
+				my cart ({Object.keys(cart).length}) <ArrowDown />
 			</a>
 		</section>
 	);
