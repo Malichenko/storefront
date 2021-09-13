@@ -8,4 +8,5 @@ export interface ContextData {
 	cart: Cart;
 	updateCart: (id: string) => void;
 	deleteCart: (id: string) => void;
+	totalPrice: number;
 }

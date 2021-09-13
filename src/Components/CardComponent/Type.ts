@@ -1,5 +1,5 @@
-import { Product } from "Services/Api";
+import { Product } from 'Interfaces/ProductInterface';
 
 export interface Props {
-  product: Product
+	product: Product;
 }

@@ -1,12 +1,171 @@
 .cart {
-
+	position: relative;
 }
 
-.cart__link {
-    color: black;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    word-spacing: .5rem;
+.cart__indicator {
+	color: black;
+	text-decoration: none;
+	font-size: 1.2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	word-spacing: 0.5rem;
+	background-color: #fff;
+	border: none;
+	transition: border-bottom 0.3s ease;
+	margin-right: 1rem;
+	cursor: pointer;
+	padding-bottom: 2px;
 }
+
+.cart__indicator--open {
+	border-bottom: #000 solid 1px;
+}
+
+.cart__window {
+	display: none;
+	position: absolute;
+	right: 0;
+	background-color: #fff;
+	min-width: 32rem;
+	max-height: 50rem;
+	overflow: scroll;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	z-index: 5;
+	padding: 1.5rem;
+}
+
+.cart__window--open {
+	display: block;
+}
+
+.cart__button-box {
+	display: flex;
+	justify-content: space-between;
+}
+
+.cart__button {
+	width: 48%;
+	border: none;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	font-weight: 600;
+	cursor: pointer;
+	padding: 1rem 0;
+}
+
+.cart__button:disabled {
+	opacity: 0.5;
+	cursor: inherit;
+}
+
+.cart__button--white {
+	background-color: #fff;
+	border: 1px solid #000;
+}
+
+.cart__button--black {
+	background-color: #000;
+	color: #fff;
+}
+
+.cart__total {
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.4rem;
+	padding-bottom: 1rem;
+	letter-spacing: 1px;
+	color: var(--text-light-grey);
+	text-transform: uppercase;
+}
+
+.cart__empty {
+	color: var(--text-grey);
+	font-size: 1.6rem;
+}
+
+.cart__item {
+	display: flex;
+	width: 100%;
+}
+
+.cart__item:not(:last-child) {
+	margin-bottom: 1rem;
+}
+
+.cart__img-box {
+	position: relative;
+	overflow: hidden;
+	display: block;
+	width: 30%;
+}
+
+.cart__img-box:after {
+	content: '';
+	display: block;
+	padding-top: 100%;
+}
+
+.cart__img {
+	position: absolute;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	z-index: 1;
+}
+
+.cart__item-caption {
+	margin-left: 1rem;
+	max-width: 60%;
+}
+
+.cart__item-title {
+	text-transform: uppercase;
+}
+
+.cart__item-count {
+	font-weight: 500;
+	color: var(--text-grey);
+}
+
+.cart__item-brand {
+	color: var(--text-light-grey);
+	text-transform: uppercase;
+	font-size: 1.2rem;
+}
+
+.cart__item-dell-box {
+	position: relative;
+}
+
+.cart__item-dell {
+	position: relative;
+	margin-left: auto;
+	width: 2rem;
+	height: 2rem;
+	opacity: 0.3;
+	background-color: #fff;
+	border: none;
+	transition: opacity 0.3s ease;
+	cursor: pointer;
+}
+.cart__item-dell:hover {
+	opacity: 1;
+}
+.cart__item-dell:before,
+.cart__item-dell:after {
+	position: absolute;
+	top: 0;
+	content: ' ';
+	height: 2rem;
+	width: 2px;
+	background-color: #333;
+}
+.cart__item-dell:before {
+	transform: rotate(45deg);
+}
+.cart__item-dell:after {
+	transform: rotate(-45deg);
+}
+
