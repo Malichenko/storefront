@@ -1,1 +1,1 @@
-export interface PropsType{}
+export interface PropsType {}

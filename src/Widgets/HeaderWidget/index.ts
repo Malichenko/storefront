@@ -1,1 +1,1 @@
-export {View as HeaderWidget} from './View'
+export { View as HeaderWidget } from './View';

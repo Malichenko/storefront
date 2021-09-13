@@ -18,7 +18,9 @@ export const BOOK: Readonly<{ [key: string]: Book }> = {
 	},
 	product: {
 		url: '/product/:id',
-		as(id: string): string {return `/product/${id}`},
+		as(id: string): string {
+			return `/product/${id}`;
+		},
 		component: ProductPage,
 		id: 'product'
 	}

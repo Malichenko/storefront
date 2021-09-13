@@ -1,1 +1,1 @@
-export {View as CardComponent} from './View'
+export { View as CardComponent } from './View';

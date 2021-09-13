@@ -10,7 +10,11 @@
     "prettier": "prettier \"./src/**/*.{ts,tsx,js,jsx,json,graphql,md}\" --check",
     "prettier:autofix": "npm run prettier -- --write",
     "bump": "npm version patch",
-    "jest": "jest"
+    "eslint-root": "eslint \"./*.js\" --cache --cache-location ./.cache/eslint/root-files",
+    "eslint-project": "eslint \"./{libs,pages,src}/**/**.{js,ts,tsx}\" --cache --cache-location ./.cache/eslint/project-files",
+    "eslint:autofix": "npm run eslint-root -- --fix && npm run eslint-project -- --fix",
+    "jest": "jest",
+    "test:autofix": "npm run prettier:autofix && npm run eslint:autofix && npm run jest"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",

@@ -1,1 +1,1 @@
-export {View as BannerComponent} from './View'
+export { View as BannerComponent } from './View';
