@@ -1,1 +1,1 @@
-export {View as Breadcrumbs} from './View'
+export { View as Breadcrumbs } from './View';
