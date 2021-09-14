@@ -7,16 +7,12 @@ import { useCart } from 'Services/Cart/Context';
 import { ArrowDown } from 'Components/ArrowDown';
 import { Divider } from 'Components/Divider';
 import { Render } from 'Components/Render';
+// Utils
+import { UtilServices } from 'Services/Utils';
 // Hooks
 import { useCartLogics } from './Hooks/useCartLogics';
 // Style
 import './Style.css';
-
-function addZeroes(num: string): string {
-	const dec = num.split('.')[1];
-	const len = dec && dec.length > 2 ? dec.length : 2;
-	return Number(num).toFixed(len);
-}
 
 export const View: React.FC = (): ReactElement => {
 	const { totalGoods, cart, totalPrice, deleteCartItem } = useCart();
@@ -64,7 +60,7 @@ export const View: React.FC = (): ReactElement => {
 									</h6>
 									<span className="cart__item-brand">{el.brand}</span>
 									<p className="cart__item-price">
-										&#65284;{addZeroes(String(el.price))}
+										&#65284;{UtilServices.addZeroes(el.price)}
 									</p>
 								</div>
 
@@ -79,7 +75,7 @@ export const View: React.FC = (): ReactElement => {
 
 						<div className="cart__total">
 							<span>total</span>
-							<span>&#65284;{addZeroes(String(totalPrice))}</span>
+							<span>&#65284;{UtilServices.addZeroes(totalPrice)}</span>
 						</div>
 					</div>
 				</Render>

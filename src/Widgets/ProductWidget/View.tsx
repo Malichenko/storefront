@@ -9,6 +9,7 @@ import { Controllers } from './Components/Controllers';
 import { useProductWidget } from './Hooks/useProductWidget';
 // Utils
 import { BOOK } from 'Navigation/Book';
+import { UtilServices } from 'Services/Utils';
 // Style
 import './Style.css';
 
@@ -41,7 +42,9 @@ export const View: React.FC = (): ReactElement => {
 					<div className="product__caption">
 						<p className="product__brand">{product.brand}</p>
 						<h2 className="product__title">{product.title}</h2>
-						<p className="product__price">&#65284;{product.price}</p>
+						<p className="product__price">
+							&#65284;{UtilServices.addZeroes(product.price)}
+						</p>
 						<p className="product__description">{product.description}</p>
 					</div>
 

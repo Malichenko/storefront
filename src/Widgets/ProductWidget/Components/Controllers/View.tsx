@@ -1,32 +1,21 @@
 // Core
-import React, { ReactElement, useEffect, useState } from 'react';
+import React, { ReactElement } from 'react';
 import classNames from 'classnames';
 //	Components
 import { AddToCartButton } from 'Components/AddToCartButton';
 //	Type
 import { Product } from 'Interfaces/ProductInterface';
+// Hooks
+import { useControllers } from './Hooks/useControllers';
 // Style
 import './Style.css';
 
 export const View: React.FC<{ updateItemCount: (n: number) => void; product: Product }> =
 	({ updateItemCount, product }): ReactElement => {
-		const [isError, setError] = useState<boolean>(false);
-		useEffect(() => {
-			const value = Number(product.count);
-			if (value <= 0) {
-				setError(true);
-			} else {
-				setError(false);
-			}
-		}, [product]);
-
-		const increase = (): void => {
-			updateItemCount(1);
-		};
-
-		const decrease = (): void => {
-			updateItemCount(-1);
-		};
+		const { isError, increase, decrease } = useControllers(
+			product.count,
+			updateItemCount
+		);
 
 		return (
 			<div className="controllers">

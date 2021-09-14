@@ -25,14 +25,14 @@ export const useCartProvider: UseCartProvider = () => {
 				...prevState,
 				[_id]: {
 					...prevState[_id],
-					price: prevState[_id].price + newItem.price,
+					price: prevState[_id].price + newItem.price * newItem.count,
 					count: prevState[_id].count + newItem.count
 				}
 			}));
 		} else {
 			setCart((prevState) => ({
 				...prevState,
-				[_id]: newItem
+				[_id]: { ...newItem, price: newItem.price * newItem.count }
 			}));
 		}
 	};
