@@ -2,6 +2,7 @@
 import React from 'react';
 // Pages
 import { CategoryPage, ProductPage } from './Pages';
+import { NotFoundPage } from "Navigation/Pages/404";
 
 type Book = {
 	url: string;
@@ -23,5 +24,10 @@ export const BOOK: Readonly<{ [key: string]: Book }> = {
 		},
 		component: ProductPage,
 		id: 'product'
-	}
+	},
+  '404': {
+		url: '/404',
+		component: NotFoundPage,
+		id: '404'
+  }
 };
