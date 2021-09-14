@@ -6,9 +6,10 @@ import { Props } from './Type';
 import { useCardComponent } from './Hooks/useCardComponent';
 // Style
 import './Style.css';
+import { AddToCartButton } from 'Components/AddToCartButton';
 
 export const View: React.FC<Props> = ({ product }): ReactElement => {
-	const { redirectHandler, addToCardHandler } = useCardComponent(product);
+	const redirectHandler = useCardComponent(product);
 
 	return (
 		<div className="card">
@@ -19,9 +20,8 @@ export const View: React.FC<Props> = ({ product }): ReactElement => {
 					<button className="buttons card__details" onClick={redirectHandler}>
 						view details
 					</button>
-					<button className="buttons card__add" onClick={addToCardHandler}>
-						add to cart
-					</button>
+
+					<AddToCartButton cx={'buttons card__add'} product={product} />
 				</div>
 			</div>
 

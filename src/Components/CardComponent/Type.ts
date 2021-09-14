@@ -4,7 +4,4 @@ export interface Props {
 	product: Product;
 }
 
-export type UseCartComponent = (product: Product) => {
-	redirectHandler: () => void;
-	addToCardHandler: () => void;
-};
+export type UseCartComponent = (product: Product) => () => void;
