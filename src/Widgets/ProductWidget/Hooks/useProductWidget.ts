@@ -17,7 +17,7 @@ export const useProductWidget = (): {
 				if (prevState) {
 					return {
 						...prevState,
-						count: n
+						count: prevState.count + n
 					};
 				}
 

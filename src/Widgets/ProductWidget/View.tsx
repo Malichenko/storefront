@@ -47,7 +47,7 @@ export const View: React.FC = (): ReactElement => {
 
 					<Divider />
 
-					<Controllers updateItemCount={updateItemCount} />
+					<Controllers product={product} updateItemCount={updateItemCount} />
 				</div>
 			</div>
 		</section>
