@@ -2,8 +2,9 @@
 import { useEffect } from 'react';
 import { useHistory } from 'react-router';
 // Utils
-import { ApiServices } from 'Services/Api';
 import { BOOK } from 'Navigation/Book';
+// Utils
+import { ApiServices } from 'Services/Api';
 
 export const useProductGuard = (id: string): void => {
 	const router = useHistory();
