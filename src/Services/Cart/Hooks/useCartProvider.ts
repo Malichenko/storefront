@@ -10,12 +10,11 @@ export const useCartProvider: UseCartProvider = () => {
 
 	useEffect(() => {
 		setTotalPrice(() => {
-			return Object.values(cart).reduce<number>((acc, el) => {
-				if (el.price) {
-					acc += el.price;
-				}
-				return acc;
-			}, 0);
+			return Object.values(cart).reduce<number>((acc, el) => acc + el.price, 0);
+		});
+
+		setTotalGoods(() => {
+			return Object.values(cart).reduce<number>((acc, el) => acc + el.count, 0);
 		});
 	}, [cart]);
 
@@ -36,8 +35,6 @@ export const useCartProvider: UseCartProvider = () => {
 				[_id]: newItem
 			}));
 		}
-
-		setTotalGoods((prevState) => prevState + 1);
 	};
 
 	const getCartItemById = (id: string): Product | null => {
@@ -50,7 +47,6 @@ export const useCartProvider: UseCartProvider = () => {
 
 	const deleteCartItem = (id: string): void => {
 		setCart((prevState) => {
-			setTotalGoods((prev) => prev - prevState[id].count);
 			const _newState: Cart = JSON.parse(JSON.stringify(prevState));
 			if (Object.prototype.hasOwnProperty.call(_newState, id)) {
 				delete _newState[id];
