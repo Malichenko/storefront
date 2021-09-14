@@ -1,26 +1,14 @@
 // Core
 import React, { ReactElement } from 'react';
-import { useHistory } from 'react-router';
-// Utils
-import { BOOK } from 'Navigation/Book';
-import { useCart } from 'Services/Cart/Context';
-
 // Type
 import { Props } from './Type';
+// Hooks
+import { useCardComponent } from './Hooks/useCardComponent';
 // Style
 import './Style.css';
-export const View: React.FC<Props> = ({ product }): ReactElement => {
-	const router = useHistory();
-	const redirectHandler = (id: string): void => {
-		if (typeof BOOK.product.as === 'function') {
-			router.push(BOOK.product.as(id));
-		}
-	};
 
-	const { updateCart } = useCart();
-	const addToCardHandler = (id: string): void => {
-		updateCart(id);
-	};
+export const View: React.FC<Props> = ({ product }): ReactElement => {
+	const { redirectHandler, addToCardHandler } = useCardComponent(product);
 
 	return (
 		<div className="card">
@@ -30,14 +18,11 @@ export const View: React.FC<Props> = ({ product }): ReactElement => {
 				<div className="card__overlay">
 					<button
 						className="buttons card__details"
-						onClick={(): void => redirectHandler(product.id)}
+						onClick={redirectHandler}
 					>
 						view details
 					</button>
-					<button
-						className="buttons card__add"
-						onClick={(): void => addToCardHandler(product.id)}
-					>
+					<button className="buttons card__add" onClick={addToCardHandler}>
 						add to cart
 					</button>
 				</div>

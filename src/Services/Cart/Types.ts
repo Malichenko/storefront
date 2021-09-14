@@ -6,7 +6,10 @@ export type Cart = PlainObject<Product>;
 export interface ContextData {
 	totalGoods: number;
 	cart: Cart;
-	updateCart: (id: string) => void;
-	deleteCart: (id: string) => void;
+	updateCart: (newItem: Product) => void;
+	deleteCartItem: (id: string) => void;
 	totalPrice: number;
+	getCartItemById: (id: string) => Product | null;
 }
+
+export type UseCartProvider = () => ContextData;

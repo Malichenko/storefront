@@ -19,7 +19,7 @@ function addZeroes(num: string): string {
 }
 
 export const View: React.FC = (): ReactElement => {
-	const { totalGoods, cart, totalPrice, deleteCart } = useCart();
+	const { totalGoods, cart, totalPrice, deleteCartItem } = useCart();
 	const { wrapperRef, open, toggleCart } = useCartLogics();
 	const isCartEmpty = totalGoods <= 0;
 
@@ -70,7 +70,7 @@ export const View: React.FC = (): ReactElement => {
 
 								<button
 									className="cart__item-dell"
-									onClick={(): void => deleteCart(el.id)}
+									onClick={(): void => deleteCartItem(el.id)}
 								/>
 							</div>
 						))}
