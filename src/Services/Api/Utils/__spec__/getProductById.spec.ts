@@ -7,7 +7,7 @@ describe('Function should match specification', () => {
 			title: 'Mashiko-Yaki Saucer',
 			brand: 'Kiriko',
 			price: 18,
-			count: 0,
+			count: 1,
 			description:
 				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at purus pulvinar, placerat turpis ac, interdum metus. In eget massa sed enim hendrerit auctor a eget.',
 			image: `${process.env.PUBLIC_URL}/media/mashiko-yaki-saucer.jpg`

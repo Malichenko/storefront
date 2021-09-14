@@ -16,10 +16,7 @@ export const View: React.FC<Props> = ({ product }): ReactElement => {
 				<img className="card__img" src={product.image} alt={product.title} />
 
 				<div className="card__overlay">
-					<button
-						className="buttons card__details"
-						onClick={redirectHandler}
-					>
+					<button className="buttons card__details" onClick={redirectHandler}>
 						view details
 					</button>
 					<button className="buttons card__add" onClick={addToCardHandler}>
