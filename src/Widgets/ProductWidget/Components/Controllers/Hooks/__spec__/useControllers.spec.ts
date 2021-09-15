@@ -1,4 +1,4 @@
-import { renderHook, act } from '@testing-library/react-hooks';
+import { act, renderHook } from '@testing-library/react-hooks';
 import { useControllers } from '../useControllers';
 
 describe('Hook should match specification', () => {
@@ -25,6 +25,17 @@ describe('Hook should match specification', () => {
 		act(() => {
 			result.current.decrease();
 		});
+
 		expect(mockFn).toHaveBeenCalledTimes(2);
+
+		const event: any = {
+			target: { value: '12' }
+		};
+
+		act(() => {
+			result.current.changeHandler(event);
+		});
+
+		expect(mockFn).toHaveBeenCalledTimes(3);
 	});
 });

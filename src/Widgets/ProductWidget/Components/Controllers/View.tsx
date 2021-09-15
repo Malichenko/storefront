@@ -12,7 +12,7 @@ import './Style.css';
 
 export const View: React.FC<{ updateItemCount: (n: number) => void; product: Product }> =
 	({ updateItemCount, product }): ReactElement => {
-		const { isError, increase, decrease } = useControllers(
+		const { isError, increase, decrease, changeHandler } = useControllers(
 			product.count,
 			updateItemCount
 		);
@@ -26,6 +26,7 @@ export const View: React.FC<{ updateItemCount: (n: number) => void; product: Pro
 							className={classNames('controllers__input', {
 								'controllers__input--error': isError
 							})}
+							onChange={changeHandler}
 							value={product.count}
 						/>
 						<p
