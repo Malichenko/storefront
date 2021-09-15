@@ -9,7 +9,6 @@ export interface ContextData {
 	updateCart: (newItem: Product) => void;
 	deleteCartItem: (id: string) => void;
 	totalPrice: number;
-	getCartItemById: (id: string) => Product | null;
 }
 
 export type UseCartProvider = () => ContextData;

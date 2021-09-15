@@ -27,14 +27,15 @@
 	height: 6rem;
 	font-size: 2rem;
 	text-align: center;
-	border: none;
+	border: 1px solid transparent;
 	background-color: var(--bgc-grey);
 	transition: 0.3s ease;
 }
 
 .controllers__input--error {
-	background-color: indianred;
-	color: white;
+	border-color: tomato;
+	color: tomato;
+	background-color: white;
 }
 
 .controllers__input,
@@ -49,14 +50,11 @@
 	display: none;
 	color: tomato;
 	position: absolute;
-	bottom: 100%;
-	left: 0;
+	top: 100%;
+	left: -100%;
 	white-space: nowrap;
-	border: 1px solid var(--text-light-grey);
 	padding: 0.3rem 0.5rem;
-	border-radius: 2px;
-	background-color: #fafafa;
-	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+	border-radius: 0.5rem;
 }
 
 .controllers__error-text--open {

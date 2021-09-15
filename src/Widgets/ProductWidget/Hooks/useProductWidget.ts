@@ -1,16 +1,14 @@
-import { useParams } from 'react-router';
-import { PlainObject } from 'Interfaces/PlainObject';
 import { useState } from 'react';
-import { useCart } from 'Services/Cart/Context';
 import { Product } from 'Interfaces/ProductInterface';
+import { ApiServices } from 'Services/Api';
 
-export const useProductWidget = (): {
+export const useProductWidget = (
+	id: string
+): {
 	item: Product | null;
 	updateItemCount: (n: number) => void;
 } => {
-	const params: PlainObject<string> = useParams();
-	const { getCartItemById } = useCart();
-	const [item, setItem] = useState<Product | null>(getCartItemById(params.id));
+	const [item, setItem] = useState<Product | null>(ApiServices.getProductById(id));
 	const updateItemCount = (n: number): void => {
 		if (item) {
 			setItem((prevState) => {

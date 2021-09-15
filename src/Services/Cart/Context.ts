@@ -6,7 +6,6 @@ export const Context = createContext<ContextData>({
 	cart: {},
 	updateCart: (): void => undefined,
 	deleteCartItem: (): void => undefined,
-	getCartItemById: () => null,
 	totalPrice: 0
 });
 export const useCart = (): ContextData => useContext(Context);

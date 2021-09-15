@@ -3,7 +3,7 @@ import { Context } from 'Services/Cart/Context';
 import { useCartProvider } from 'Services/Cart/Hooks/useCartProvider';
 
 export const CartProvider: React.FC = ({ children }): ReactElement => {
-	const { totalGoods, cart, totalPrice, updateCart, deleteCartItem, getCartItemById } =
+	const { totalGoods, cart, totalPrice, updateCart, deleteCartItem } =
 		useCartProvider();
 	return (
 		<Context.Provider
@@ -12,8 +12,7 @@ export const CartProvider: React.FC = ({ children }): ReactElement => {
 				cart,
 				totalPrice,
 				updateCart,
-				deleteCartItem,
-				getCartItemById
+				deleteCartItem
 			}}
 		>
 			{children}

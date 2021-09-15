@@ -5,16 +5,20 @@ import { Breadcrumbs } from 'Components/Breadcrumbs';
 import { NotFoundPage } from 'Navigation/Pages/404';
 import { Divider } from 'Components/Divider';
 import { Controllers } from './Components/Controllers';
+import { useParams } from 'react-router';
 // Hooks
 import { useProductWidget } from './Hooks/useProductWidget';
 // Utils
 import { BOOK } from 'Navigation/Book';
 import { UtilServices } from 'Services/Utils';
+// Type
+import { PlainObject } from 'Interfaces/PlainObject';
 // Style
 import './Style.css';
 
 export const View: React.FC = (): ReactElement => {
-	const { item: product, updateItemCount } = useProductWidget();
+	const params: PlainObject<string> = useParams();
+	const { item: product, updateItemCount } = useProductWidget(params.id);
 
 	if (!product) {
 		return <NotFoundPage />;

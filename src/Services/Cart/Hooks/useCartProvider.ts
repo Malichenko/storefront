@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Cart, UseCartProvider } from 'Services/Cart/Types';
-import { ApiServices } from 'Services/Api';
 import { Product } from 'Interfaces/ProductInterface';
 
 export const useCartProvider: UseCartProvider = () => {
@@ -37,14 +36,6 @@ export const useCartProvider: UseCartProvider = () => {
 		}
 	};
 
-	const getCartItemById = (id: string): Product | null => {
-		if (Object.prototype.hasOwnProperty.call(cart, id)) {
-			return cart[id];
-		}
-
-		return ApiServices.getProductById(id) || null;
-	};
-
 	const deleteCartItem = (id: string): void => {
 		setCart((prevState) => {
 			const _newState: Cart = JSON.parse(JSON.stringify(prevState));
@@ -60,7 +51,6 @@ export const useCartProvider: UseCartProvider = () => {
 		cart,
 		totalPrice,
 		updateCart,
-		getCartItemById,
 		deleteCartItem
 	};
 };
